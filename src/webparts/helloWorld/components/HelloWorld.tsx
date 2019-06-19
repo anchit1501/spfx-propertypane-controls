@@ -8,7 +8,7 @@ export default class HelloWorld extends React.Component<IHelloWorldProps, {}> {
     return (
       <div className={ styles.helloWorld }>
         <div className={ styles.container }>
-          <div className={ styles.row }>
+          <div className={ styles.row } style={{backgroundColor : `${this.props.color}`}}>
             <div className={ styles.column }>
               <span className={ styles.title }>Welcome to SharePoint!</span>
               <p className={ styles.subTitle }>Customize SharePoint experiences using Web Parts.</p>
